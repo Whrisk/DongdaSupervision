@@ -1,0 +1,43 @@
+@main("DongdaSupervision"){
+    <link>
+}{
+    <div class="title"></div>
+    <div class="layui-row">
+        <div class="layui-col-md9">
+            <ul class="layui-nav" lay-filter="">
+                <li class="layui-nav-item"><a href="">首页</a></li>
+                <li class="layui-nav-item"><a href="">咚哒用户</a></li>
+                <li class="layui-nav-item layui-this"><a href="">咚哒服务</a></li>
+            </ul>
+        </div>
+        <div class="layui-col-md3">
+            <ul class="layui-nav">
+                <li class="layui-nav-item">
+                    <a href=""><img src='@routes.Assets.versioned("img/user_icon.jpg")' class="layui-nav-img">yym</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">个人信息</a></dd>
+                        <dd><a href="javascript:;">退出登录</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content layui-row">
+        <div class="layui-col-xs-offset1 layui-col-xs10">
+            <table class="layui-table" lay-skin="row">
+                <thead>
+                    <tr>
+                        <th>用户id</th>
+                        <th>用户头像</th>
+                        <th>用户昵称</th>
+                        <th>真实姓名</th>
+                        <th>公司名称</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+    </div>
+}{
+    <script></script>
+}

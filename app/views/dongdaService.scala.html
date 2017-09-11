@@ -1,0 +1,56 @@
+@main("DongdaSupervision"){
+  <script src="@routes.Assets.versioned("js/dongdaService.js")"></script>
+}{
+  <div class="title"></div>
+  <div class="layui-row">
+    <div class="layui-col-md9">
+      <ul class="layui-nav" lay-filter="">
+        <li class="layui-nav-item"><a href="">首页</a></li>
+        <li class="layui-nav-item"><a href="">咚哒用户</a></li>
+        <li class="layui-nav-item layui-this"><a href="">咚哒服务</a></li>
+      </ul>
+    </div>
+    <div class="layui-col-md3">
+      <ul class="layui-nav">
+        <li class="layui-nav-item">
+          <a href=""><img src="@routes.Assets.versioned("img/user_icon.jpg")" class="layui-nav-img">yym</a>
+          <dl class="layui-nav-child">
+             <dd><a href="javascript:;">个人信息</a></dd>
+            <dd><a href="javascript:;">退出登录</a></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="content layui-row">
+    <div class="layui-col-xs-offset1 layui-col-xs10">
+      <table class="layui-table" lay-skin="row">
+        <thead>
+          <tr>
+            <th>服务标题</th>
+            <th>服务地点</th>
+            <th>服务分类</th>
+          </tr>
+        </thead>
+        <tbody id="serviceTable"></tbody>
+      </table>
+      <div id="page"></div>
+    </div>
+  </div>
+}{
+  <script>
+//          layui.use('laypage', function(data){
+//            var laypage = layui.laypage;
+//
+//            //执行一个laypage实例
+//            laypage.render({
+//              elem: 'page',
+//              limit: 40,
+//              count: 12,
+//              jump : function (obj,first) {
+//
+//              }
+//            });
+//          });
+  </script>
+}

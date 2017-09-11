@@ -1,0 +1,67 @@
+@main("DongdaSupervision"){
+  <script src="@routes.Assets.versioned("js/dongdaServiceDetail.js")"></script>
+}{
+  <div class="title"></div>
+  <div class="layui-row">
+    <div class="layui-col-md9">
+      <ul class="layui-nav" lay-filter="">
+        <li class="layui-nav-item"><a href="">首页</a></li>
+        <li class="layui-nav-item"><a href="">咚哒用户</a></li>
+        <li class="layui-nav-item layui-this"><a href="">咚哒服务</a></li>
+      </ul>
+    </div>
+    <div class="layui-col-md3">
+      <ul class="layui-nav">
+        <li class="layui-nav-item">
+          <a href=""><img src="@routes.Assets.versioned("img/user_icon.jpg")" class="layui-nav-img">yym</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">个人信息</a></dd>
+            <dd><a href="javascript:;">退出登录</a></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="content layui-row">
+    <div class="layui-col-xs-offset1 layui-col-xs10">
+      <table class="layui-table" lay-skin="row">
+        <tbody id="serviceDetail">
+          <tr>
+            <td>服务标题</td>
+            <td id="title"></td>
+          </tr>
+          <tr>
+            <td>服务描述</td>
+            <td id="description"></td>
+          </tr>
+          <tr>
+            <td>服务图片</td>
+            <td id="images"></td>
+          </tr>
+          <tr>
+            <td>服务地址相关信息</td>
+            <td id="address"></td>
+          </tr>
+          <tr>
+            <td>服务分类信息</td>
+            <td id="category"></td>
+          </tr>
+          <tr>
+            <td>服务预定单价（单位为分）</td>
+            <td id="price"></td>
+          </tr>
+          <tr>
+            <td>年龄范围</td>
+            <td id="age_boundary"></td>
+          </tr>
+
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+}{
+  <script>
+
+  </script>
+}
