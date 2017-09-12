@@ -90,7 +90,7 @@ case class HttpService(val url : String) {
     }
     
     def post(parameters : JsValue) : JsValue = {
-        connection.setRequestProperty("Content-Type", "application/json")
+        connection.setRequestProperty("Content-Type", "application/json;charset=utf-8")
         connection.setRequestProperty("connection", "keep-alive")
         connection.setDoOutput(true)
         connection.setDoInput(true)
